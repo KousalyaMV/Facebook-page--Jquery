@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        .nav {
+            background: #eee;
+        }
+
+            .nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+                .nav ul a {
+                    text-decoration: none;
+                }
+
+                    .nav ul a:active, focus, hover {
+                        color: green;
+                    }
+
+        .nav {
+            text-align: left;
+            -webkit-flex: 1 auto;
+            flex: 1 auto;
+            -webkit-order: 1;
+            order: 1;
+        }
+
+        .details {
+            -webkit-flex: 6 0px;
+            flex: 6 0px;
+            -webkit-order: 2;
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <section id="header"><div class="sticky">FB</div></section>
+
+    <div id="About" class="flex-container">
+        <nav class="nav">
+            <ul>
+                <li><a id="btnWorkEdu" href="#WorkEdu">Work And Education</a></li>
+                <li><a id="btnPlaces" href="#Places">Places Lived</a></li>
+                <li><a id="btnContact" href="#Contact">Contact and Basic Info</a></li>
+            </ul>
+        </nav>
+        <div class="details">
+            <div id="WorkEdu">
+                <h1>Work And Education</h1>
+                <div class="col-md-12">
+                    <h2>Work</h2>
+                    <div id="myWork"></div>
+                </div>
+                <hr>
+                <div class="col-md-12">
+                    <h2>College</h2>
+                    <div id="myColg"></div>
+                </div>
+                <hr>
+                <div class="col-md-12">
+                    <h2>High School </h2>
+                    <div id="mySchool">
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div id="Places">
+                <h1>Current Place And Hometown</h1>
+                <div class="col-md-12">
+                    <div id="myPlaces"></div>
+                </div>
+            </div>
+            <div id="Contact">
+                <h1>Contact And Basic Info</h1>
+                <div class="col-md-12">
+                    <div id="myPersonalInfo"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="Profile.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
